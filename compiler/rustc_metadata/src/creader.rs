@@ -1192,7 +1192,7 @@ impl CStore {
                 // Don't worry about pathless `--extern foo` sysroot references
                 continue;
             }
-            if entry.nounused_dep || entry.force {
+            if entry.nounused_dep || entry.force || !entry.add_prelude {
                 // We're not worried about this one
                 continue;
             }

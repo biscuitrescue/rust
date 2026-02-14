@@ -1,0 +1,15 @@
+warning: extern crate `baz` is unused in crate `noprelude`
+  --> $DIR/noprelude.rs:7:1
+   |
+LL | #![warn(unused_crate_dependencies)]
+   | ^
+   |
+   = help: remove the dependency or add `use baz as _;` to the crate root
+note: the lint level is defined here
+  --> $DIR/noprelude.rs:7:9
+   |
+LL | #![warn(unused_crate_dependencies)]
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: 1 warning emitted
+
